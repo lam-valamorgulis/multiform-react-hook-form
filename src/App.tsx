@@ -1,12 +1,7 @@
 import "./App.css";
-import MultiSelectDropdown from "./MultiSelectDropdown";
 
 function App() {
-  return (
-    <>
-      <MultiSelectDropdown />
-    </>
-  );
+  return <div>hello </div>;
 }
 
 export default App;
