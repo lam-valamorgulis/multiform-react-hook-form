@@ -27,8 +27,8 @@ export const useFormLogic = () => {
 
       setInformation(formattedData);
       setIsSubmitting(false); // Set loading state to false
-      methods.reset();
-    }, 2000); // Delay the submission by 2000ms
+      methods.reset({ username: "", email: "" });
+    }, 2000);
   };
 
   return { methods, information, onSubmit, isSubmitting };

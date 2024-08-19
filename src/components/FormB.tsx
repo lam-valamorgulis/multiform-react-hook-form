@@ -3,6 +3,7 @@ import { SelectProps } from "antd/es/select";
 import { Dayjs } from "dayjs";
 import { Controller, useFormContext } from "react-hook-form";
 import Label from "./UI/Label";
+import Title from "./UI/Title";
 
 const { RangePicker } = DatePicker;
 
@@ -28,10 +29,7 @@ function FormB() {
 
   return (
     <div className="relative rounded-xl border border-gray-200 bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-      <h2 className="text-lg font-semibold text-gray-800 mb-4">
-        Form with AntD components
-      </h2>
-
+      <Title> Form with AntD components</Title>
       <div className="mb-4">
         <Label>Date</Label>
         <Controller
@@ -71,7 +69,6 @@ function FormB() {
               value={value}
               tokenSeparators={[","]}
               options={options}
-              defaultValue=""
               className="rounded-md border-gray-300 shadow-sm focus:ring-2 focus:ring-indigo-500"
             />
           )}
